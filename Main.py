@@ -62,14 +62,16 @@ def methods():
 """)
 
 def main():
-    menu()
+    menu():
     while(True):
         cnc = input('''@Lintar\n ==>''')
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
             methods()
+        elif cnc == "Test":
+        	print('Testing')
 
         elif "Help" in cnc:
-            print(f'''
+            print(f'''         
 » Methods : To show methods 
 » Clear: To clear all messages
             ''')
@@ -125,7 +127,7 @@ def main():
                 print('Usage: FLOOD <url> <threads> METHODS<GET/POST> <time>')
                 print('Example: FLOOD http://example.com 15000 get 60')
                 
-        elif "HTTP2" in cnc:
+        elif "HTTP" in cnc:
             try:
                 url = cnc.split()[1]
                 req_per_ip = cnc.split()[2]
