@@ -71,8 +71,9 @@ def main():
         cnc = input('''@Lintar\n ==>''')
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
             methods()
-        elif cnc == "Clear" or cnc == "CLR":
-	    clear()
+        elif cnc == "Clear":
+		print('tes')
+	    
 
         elif "Help" in cnc:
             print(f'''         
