@@ -72,7 +72,7 @@ def main():
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
             methods()
         elif cnc == "Clear":
-		print('tes')
+	    logo()
 	    
 
         elif "Help" in cnc:
