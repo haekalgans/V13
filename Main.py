@@ -88,7 +88,7 @@ def main():
                 
 # LAYER 7 METHODS
 
-          if "CF-UAM" in cnc:
+      if "CF-UAM" in cnc:
             try:
                 url = cnc.split()[1]
                 time = cnc.split()[2]
