@@ -62,7 +62,7 @@ def methods():
 """)
 
 def main():
-    menu():
+    logo()
     while(True):
         cnc = input('''@Lintar\n ==>''')
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
