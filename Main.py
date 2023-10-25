@@ -70,8 +70,10 @@ def main():
     logo()
     while(True):
         cnc = input('''@Lintar\n ==>''')
-        if cnc == "Methods" or cnc == "METHODS" or cnc == "methods":
+        if cnc == "method" or cnc == "methods" or cnc == "METHOD" or cnc == "METHODS":
             methods()
+        elif cnc == "clear" or cnc == "CLEAR" or cnc == "CLS" or cnc == "cls":
+            logo()
 		
 # LAYER 7 METHODS
                 
