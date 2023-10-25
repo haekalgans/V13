@@ -72,8 +72,8 @@ def main():
         cnc = input('''@Lintar\n ==>''')
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods":
             methods()
-	elif cnc == "Clear":
-	    logo()
+	elif cnc == "Clear" :
+	        logo()
 	    
 	    
 # LAYER 7 METHODS
