@@ -72,15 +72,10 @@ def main():
         cnc = input('''@Lintar\n ==>''')
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
             methods()
-	elif cnx == "Clear" or cnc == "CLEAR" or cnc == "clear":
+	elif cnc == "Clear" or cnc == "CLEAR" or cnc == "clear":
 	    logo()
 	    
 
-        elif "Help" in cnc:
-            print(f'''         
-» Methods : To show methods 
-» Clear: To clear all messages
-            ''')
 
 # LAYER 7 METHODS
                 
@@ -201,6 +196,11 @@ def main():
 #only niggs dont understand
 
 
+        elif "Help" in cnc:
+            print(f'''         
+» Methods : To show methods 
+» Clear: To clear all messages
+            ''')
         else:
             try:
                 cmmnd = cnc.split()[0]
