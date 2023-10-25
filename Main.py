@@ -222,7 +222,6 @@ def login():
     elif username == user and password == passwd:
         print("Welcome to Its DDoS Panel!!!...")
         time.sleep(0.3)
-	lod()
         main()
 
 login()
