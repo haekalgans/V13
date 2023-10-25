@@ -16,7 +16,7 @@ import sys
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-proxy = open('proxy.txt').readlines()
+proxy = open('http.txt').readlines()
 bots = len(proxy)
 
 def lod():
