@@ -24,7 +24,7 @@ def lod():
 
 def atas():
 	print(' Its | Wellcome To Its DDoS Panel | Owner By: Lintar ')
-	print('                     Botnets that we have : {bots}                      ')
+	print('             Botnets that we have : {bots}           ')
 	print("")
 
 def logo():
