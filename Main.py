@@ -73,10 +73,9 @@ def main():
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
             methods()
 	elif cnc == "Clear" or cnc == "CLEAR" or cnc == "clear":
-	    logo()
+		logo()
 	    
-
-
+	    
 # LAYER 7 METHODS
                 
         elif "UAMBYPASS" in cnc:
