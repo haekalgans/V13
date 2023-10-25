@@ -28,6 +28,8 @@ def atas():
 	print("")
 
 def logo():
+	clear()
+	atas()
 	print(""" 
 ██▓▄▄▄█████▓  ██████       
 ▓██▒▓  ██▒ ▓▒▒██    ▒          Its DDoS Panel By: Lintar          
@@ -65,12 +67,13 @@ def methods():
 """)
 
 def main():
-    atas()
     logo()
     while(True):
         cnc = input('''@Lintar\n ==>''')
         if cnc == "Methods" or cnc == "METHODS" or cnc == "methods" or cnc == "method" or cnc == "Method" or cnc == "METHOD":
             methods()
+	elif cnx == "Clear" or cnc == "CLEAR" or cnc == "clear":
+	    logo()
 	    
 
         elif "Help" in cnc:
@@ -79,13 +82,6 @@ def main():
 » Clear: To clear all messages
             ''')
 
-        else:
-            try:
-                cmmnd = cnc.split()[0]
-                print("Command: [ " + cmmnd + " ] Not Found!")
-            except IndexError:
-                pass
-                
 # LAYER 7 METHODS
                 
         elif "UAMBYPASS" in cnc:
@@ -202,6 +198,16 @@ def main():
             except IndexError:
                 print('Usage: paping <ip> <port> <time>')
                 print('Example: paping 1.1.1.1 443 120')
+#only niggs dont understand
+
+
+        else:
+            try:
+                cmmnd = cnc.split()[0]
+                print("Command: [ " + cmmnd + " ] Not Found!")
+            except IndexError:
+                pass
+                
 
 # LOG-IN
 
