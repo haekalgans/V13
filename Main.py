@@ -16,7 +16,7 @@ import sys
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-proxy = open('http.txt').readlines()
+proxy = open('proxy.txt').readlines()
 bots = len(proxy)
 
 def lod():
@@ -73,7 +73,7 @@ def main():
         if cnc == "method" or cnc == "methods" or cnc == "METHOD" or cnc == "METHODS":
             methods()
         elif cnc == "clear" or cnc == "CLEAR" or cnc == "CLS" or cnc == "cls":
-            logo()
+            main()
 		
 # LAYER 7 METHODS
                 
